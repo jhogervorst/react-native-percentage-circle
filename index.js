@@ -53,17 +53,6 @@ const styles = StyleSheet.create({
 });
 
 class PercentageCircle extends Component {
-  propTypes: {
-    color: PropTypes.string,
-    bgcolor: PropTypes.string,
-    innerColor: PropTypes.string,
-    radius: PropTypes.number,
-    percent: PropTypes.number,
-    borderWidth: Proptypes.number,
-    textStyle: Proptypes.array,
-    disabled: PropTypes.bool,
-  }
-
   constructor(props) {
     super(props);
     let percent = this.props.percent;
@@ -167,6 +156,17 @@ class PercentageCircle extends Component {
     );
   }
 }
+
+PercentageCircle.propTypes = {
+  color: PropTypes.string,
+  bgcolor: PropTypes.string,
+  innerColor: PropTypes.string,
+  radius: PropTypes.number,
+  percent: PropTypes.number,
+  borderWidth: Proptypes.number,
+  textStyle: Proptypes.array,
+  disabled: PropTypes.bool,
+};
 
 // set some attributes default value
 PercentageCircle.defaultProps = {

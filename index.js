@@ -163,8 +163,8 @@ PercentageCircle.propTypes = {
   innerColor: PropTypes.string,
   radius: PropTypes.number,
   percent: PropTypes.number,
-  borderWidth: Proptypes.number,
-  textStyle: Proptypes.array,
+  borderWidth: PropTypes.number,
+  textStyle: PropTypes.array,
   disabled: PropTypes.bool,
 };
 
